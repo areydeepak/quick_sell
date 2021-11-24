@@ -1,0 +1,113 @@
+.body{
+    height :100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.counter{
+    box-shadow: .5px .5px .5px .5px grey;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 257px;
+    height: 130px;
+}
+.box{
+    padding: 12px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.box_items_container {
+    display: flex;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #B24242;
+}
+
+.box_minus{
+    width: 60px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px 0 0 8px;
+    color: #B24242;
+    background-color: #fff;
+    font-weight: 900;
+    user-select: none;
+    cursor: pointer;
+    font-size: 21px;
+}
+
+.value{
+    width: 60px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #B24242;
+    border-left: 1px solid #B24242;
+    color: #B24242;
+    background-color: #FBE8E8;
+    padding-left: 0px;
+    font-weight: 900;
+    user-select: none;
+    font-size: 21px;
+}
+
+.box_input::-webkit-outer-spin-button,
+.box_input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.box_input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.box_input {
+    border: none;
+    outline: none !important;
+    color: #B24242;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-weight: 900;
+    text-align: center;
+    font-size: 21px;
+}
+
+.box_plus{
+    width: 60px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 8px 8px 0;
+    background-color: #B24242;
+    color: white;
+    font-weight: 900;
+    user-select: none;
+    cursor: pointer;
+    font-size: 21px;
+}
+
+.bottom{
+    /* grid-row: 1; */
+    grid-column: span 3;
+    text-align: center;
+}
